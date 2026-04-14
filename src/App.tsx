@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import AdminLogin from "./pages/AdminLogin.tsx";
@@ -8,7 +8,7 @@ import TelecallerLogin from "./pages/TelecallerLogin.tsx";
 import TelecallerDashboard from "./pages/TelecallerDashboard.tsx";
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Routes>
       <Route path="/" element={<Index />} />
       <Route path="/thank-you" element={<ThankYou />} />
@@ -18,7 +18,7 @@ const App = () => (
       <Route path="/telecaller/dashboard" element={<TelecallerDashboard />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
