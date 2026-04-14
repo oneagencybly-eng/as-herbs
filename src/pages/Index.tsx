@@ -1,9 +1,16 @@
-const Index = () => {
+import { HashRouter, Routes, Route } from "react-router-dom";
+import Index from "./pages/Index.tsx";
+import ThankYou from "./pages/ThankYou.tsx";
+
+const App = () => {
   return (
-    <div style={{ padding: "40px", fontSize: "24px" }}>
-      Home page is working
-    </div>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/thank-you" element={<ThankYou />} />
+      </Routes>
+    </HashRouter>
   );
 };
 
-export default Index;
+export default App;
