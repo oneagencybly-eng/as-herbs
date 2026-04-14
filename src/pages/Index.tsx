@@ -1,7 +1,7 @@
 const Index = () => {
   return (
     <div style={{ padding: "40px", fontSize: "24px" }}>
-      Index page is working
+      Home page is working
     </div>
   );
 };
