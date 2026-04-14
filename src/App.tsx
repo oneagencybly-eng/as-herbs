@@ -1,21 +1,7 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
-
-const Home = () => {
-  return (
-    <div style={{ padding: "40px", fontSize: "24px" }}>
-      Router is working
-    </div>
-  );
-};
+import Index from "./pages/Index.tsx";
 
 const App = () => {
-  return (
-    <HashRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </HashRouter>
-  );
+  return <Index />;
 };
 
 export default App;
